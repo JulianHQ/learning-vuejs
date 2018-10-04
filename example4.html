@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Learning Vue JS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  
+  <script src="example4.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    <p>Directives apply special reactive behaviour to the rendered DOM</p>
+    <a href="{{ youtubeURL }}">Go to YouTube (that doesn't work!)</a>
+    <br>
+    <a v-bind:href="youtubeURL">Go to YouTube</a>
+    <br>
+    <a :href="youtubeURL">Go to YouTube (seems like new)</a>
+  </div>
+</body>
+</html>
