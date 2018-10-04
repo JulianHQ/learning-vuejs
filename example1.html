@@ -14,6 +14,10 @@
 <body>
   <div id="app">
     <h1>{{ message }}</h1>
+    <h3>Age: {{ age * 2 }}</h3>
+    <h3>Status: {{ age > 60 ? 'Old' : 'Young' }}</h3>
+    <h3>First Name: {{ name.split(' ')[0] }}</h3>
+    <h3>Last Name: {{ name.split(' ')[1] }}</h3>
   </div>
 </body>
 </html>

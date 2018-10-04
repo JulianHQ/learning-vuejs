@@ -4,6 +4,8 @@ new Vue({
     
   // String Interpolation (Fancy word of putting data into HTML)
   data: {
-    message: 'Hello World!'
+    message: 'Hello World!',
+    age: 12,
+    name: 'Julián Hernández'
   }
 });
