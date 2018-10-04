@@ -18,21 +18,22 @@
       released in data properties and output them using string interpolation.
     </p>
 
-    <p>Title:</p>
-    <p>Released:</p>
+    <p>Title: {{ title }}</p>
+    <p>Released: {{ released }}</p>
 
     <p style="font-weight: bold;">
       Excercise 2: Output whether or not the movie is old or new by using a method.
       The movie is old if it was released prior to year 2000.
     </p>
 
-    <p>The movie is [new/old]</p>
+    <p>The movie is {{ movieDescription().desc }}</p>
 
     <p style="font-weight: bold;">
       Excercise 3: Bind the movie name to the "title" attribute on the following div element
     </p>
 
-    <div>Hover your cursor here!</div>
+    <div v-bind:title="title">Hover your cursor here!</div> <br>
+    <div :title="title">Or you can hover it over here as well...</div>
     
   </div>
 </body>
