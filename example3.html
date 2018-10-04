@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Learning Vue JS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  
+  <script src="example3.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    Your full name is: {{ getFullName() }}
+
+    <br>
+
+    Random fullname to display: {{ showFullName('Andrés', 'Quintero') }}
+
+    <br>
+
+    Show fullname from returned Object: {{ getFullNameObj('Jack', 'Ayate').name }}
+  </div>
+</body>
+</html>
